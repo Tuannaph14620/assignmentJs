@@ -1,8 +1,23 @@
-const menuList = ["menu 1", "menu 2", "menu 3"];
-const menuElement = document.querySelector("#menu");
-if (menuElement) {
-    // eslint-disable-next-line no-plusplus
-    for (let i = 0; i < menuList.length; i++) {
-        menuElement.innerHTML += `<li>${menuList[i]}</li>`;
-    }
-}
+import Navigo from "navigo";
+import HomePage from "./pages/home";
+
+const router = new Navigo("/", { linksSelector: "a" });
+const print = (content) => {
+    document.getElementById("app").innerHTML = content;
+};
+
+router.on({
+    "/": () => {
+        print(HomePage.render());
+    },
+    "/about": () => {
+        print("About Page");
+    },
+    "/product": () => {
+        print("Product Page");
+    },
+});
+
+router.notFound(() => print("Not Found Page"));
+
+router.resolve();
