@@ -21,7 +21,7 @@ const News = {
                   .join("")}
                     </div>
                     </div>
-        <h2 class="font-semibold text-2xl text-blue-900 my-4 uppercase">Hoạt động sinh viên</h2>
+        <h2 class="py-4 font-bold text-2xl uppercase">Hoạt động sinh viên</h2>
         <div class="active">
         <div class="flex justify-between gap-6">
         ${data
