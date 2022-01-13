@@ -17,7 +17,7 @@ router.on({
     "/chuongtrinhdaotao": () => {
         print("Chương trình đào tạo");
     },
-    "/gócinhvien": () => {
+    "/gocsinhvien": () => {
         print("Góc sinh viên");
     },
     "/tuyendung": () => {
