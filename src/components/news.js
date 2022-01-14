@@ -3,6 +3,7 @@ import data from "../data";
 const News = {
         render() {
             return /* html */ `
+            
             <h2 class="py-4 font-bold text-2xl uppercase">Tin tức học tập</h2>
             <div class = "news">
                 <div class="flex justify-between gap-6">

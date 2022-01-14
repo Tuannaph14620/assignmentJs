@@ -21,6 +21,9 @@ const headerIndex = {
                 <li>
                     <a href="/tuyendung" class="mr-10 hover:text-blue-800">Tuyển dụng </a>
                 </li>
+                <li>
+                    <a href="/signin" class="mr-10 hover:text-blue-800 font-bold ">Đăng nhập </a>
+                </li>
             </ul>
             <div class="search">
                 <input type="text" class="p-1" />
@@ -32,8 +35,8 @@ const headerIndex = {
             <img class="w-full pt-2" src="LAP1/image/banner.jpg" alt="">
         </div>
 
-    </header>`
-    }
-}
+    </header>`;
+    },
+};
 
-export default headerIndex
+export default headerIndex;
