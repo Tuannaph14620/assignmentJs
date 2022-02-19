@@ -1,0 +1,93 @@
+{
+    "products": [{
+            "id": 10,
+            "title": "Manchester City Home Shirt 21/22",
+            "img": "http://res.cloudinary.com/dl8w6p4sf/image/upload/v1644898155/nxlahni61kxwerfasg3r.png",
+            "price": "2,000,000",
+            "desc": "",
+            "categoryId": 2
+        },
+        {
+            "title": "Manchester City Home Long Sleeve Shirt 21/22 $ ",
+            "img": "http://res.cloudinary.com/dl8w6p4sf/image/upload/v1644824570/glfeliwumkvdezlkuar7.png",
+            "price": "2,000,500",
+            "desc": "Be part of another legendary season. The Manchester City Home Longsleeve Shirt is ideal to add to any ManCity collection. Featuring the shirt of the 2021-22 kit, this long sleeve shirt is sure to show-off your ManCity pride wherever you go.\n",
+            "id": 11,
+            "categoryId": 1
+        },
+        {
+            "title": "Manchester City Authentic Football Shorts 21/22",
+            "img": "http://res.cloudinary.com/dl8w6p4sf/image/upload/v1644824655/jpq16hvz12sf0mjjqk3k.png",
+            "price": "1,050,000",
+            "desc": "Wear your city with pride as another legendary season takes play. Featuring the Manchester City 2021/2022 season kit design. Theses shorts are perfect to wear on and off the field. Perfect to show your pride as a true Cityzen.",
+            "id": 12,
+            "categoryId": 2
+        },
+        {
+            "title": "Manchester City Pre-Match Jacket",
+            "img": "http://res.cloudinary.com/dl8w6p4sf/image/upload/v1644824741/maoydvw08swntzxysmcq.png",
+            "price": "2,500,000",
+            "desc": "The official Pre-match Collection consists of technical and stylish products worn by your favorite players while warming up before kick-off on match days.",
+            "id": 13,
+            "categoryId": 3
+        },
+        {
+            "title": "Manchester City Pre-Match 1/4 Zip Top",
+            "img": "http://res.cloudinary.com/dl8w6p4sf/image/upload/v1644825613/hxgo47kmuvjajfpzbmji.png",
+            "price": "2,000,500",
+            "desc": "The official Pre-match Collection consists of technical and stylish products worn by your favourite players while warming up before kick-off on match days.\n",
+            "id": 14,
+            "categoryId": 3
+        }
+    ],
+    "categorys": [{
+            "id": 1,
+            "name": "Trang phục sân khách"
+        },
+        {
+            "id": 2,
+            "name": "Trang phục sân Nhà"
+        },
+        {
+            "id": 3,
+            "name": "Trang phục sân tập"
+        }
+    ],
+    "users": [{
+            "email": "anhtuans2783@gmail.com",
+            "password": "$2a$10$80i41B8eIeqJ5NCpxcv28OEdq8lBVODHfLpcPlJNIWazygHM1qp9e",
+            "username": "congam",
+            "permission": 0,
+            "id": 1
+        },
+        {
+            "id": 2,
+            "username": "RipSocola",
+            "password": "$2a$10$ba.JR4RuGxnpsNqBaZZ0Y.J2qqAXsfryrBjyjZguOjMfvjsoN68.G",
+            "email": "tuannaph14620@fpt.edu.vn",
+            "permission": "1"
+        }
+    ],
+    "posts": [{
+            "id": 1,
+            "title": "GUARDIOLA: I ADAPT TO THE PLAYERS I HAVE",
+            "img": "https://www.mancity.com/meta/media/ynkgbidw/city-v-tottenham-pep-press-conference.jpg?width=1136",
+            "comtent": "Pep Guardiola says he has never complained about his club’s transfer business as he expressed the belief that it is his job as a manager to adapt in order to get the best out of the players at his disposal.The Manchester City boss has managed his squad expertly so far this season, guiding his team to a nine-point lead at the top of the Premier League and receiving plenty of praise for how he has navigated the campaign without a recognised striker.I want to say something and be clear - I was never disappointed in my managerial career with the club and what it does in the transfer market,” he said when asked at his pre-match press conference if not signing a striker was a sliding doors moment. never create a fire here because I represent the club and the club is always beyond myself.We tried [to sign a striker], but it was far away from being done because Tottenham were clear it was not going to happen.",
+            "desc": "Pep Guardiola says he has never complained about his club’s transfer business as he expressed the belief that it is his job as a manager to adapt in order to get the best out of the players at his disposal."
+        },
+        {
+            "id": 2,
+            "title": "Foden hails ‘special’ City squad",
+            "img": "https://www.mancity.com/meta/media/t11eoz43/tf703357.jpg?width=1136",
+            "comtent": "Phil Foden has highlighted the importance of the entire squad in City’s success across the campaign to date.The England midfielder grabbed his first goals of 2022 in victories over Norwich and Sporting CP in the past seven days, as City made it 19 wins in our last 21 matches in all competitions.It’s been an incredible run for Pep Guardiola’s men ahead of Tottenham Hotspur’s Premier League visit on Saturday evening.And Foden has pointed to the role of the collective in that rich vein of form, declaring City’s strength in depth a unique phenomenon.It’s been a great week. I have had two tap-ins this week and every goal counts,” he reflected on his personal form.I am happy to get back to scoring ways as it has been a while.I feel like the team is so special and we have so many great players and players that can come on and make an impact.I feel like all year round everyone has played their part and chipped in with goals and assists.We need to keep that going and there will be some bad moments I am sure, but it is about how we react after that and how we bounce back.",
+            "desc": "Phil Foden has highlighted the importance of the entire squad in City’s success across the campaign to date."
+        },
+        {
+            "id": 3,
+            "title": "TRAINING: SHARPENING UP FOR SPURS!",
+            "img": "https://www.mancity.com/meta/media/tc0nrzlo/tf707890-1.jpg?width=976",
+            "comtent": "City welcome Antonio Conte's men to the Etihad Stadium on Saturday 19 February, with kick-off scheduled for 17:30 (UK).City welcome Antonio Conte's men to the Etihad Stadium on Saturday 19 February, with kick-off scheduled for 17:30 (UK).However, the boss is expecting Spurs to push us to our limits this weekend, as they look to end their three-match Premier League losing run.It all points towards a thrilling clash, and the players put the finishing touches to preparations at a windy CFA on Friday afternoon.",
+            "desc": "The best of the action from Friday's session at the City Football Academy ahead of Tottenham's Premier League visit."
+        }
+    ]
+}

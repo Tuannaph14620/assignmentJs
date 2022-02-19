@@ -1,3 +1,4 @@
+/* eslint-disable eol-last */
 module.exports = {
     env: {
         browser: true,
@@ -13,6 +14,6 @@ module.exports = {
         semi: ["error", "always"],
         quotes: ["error", "double", { allowTemplateLiterals: true }],
         indent: ["error", 4],
-        "linebreak-style: 0",
+        "linebreak-style": 0,
     },
 };

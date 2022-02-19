@@ -1,55 +1,95 @@
+/* eslint-disable eol-last */
+/* eslint-disable space-before-function-paren */
 import Navigo from "navigo";
 import editNews from "./pages/admin/news/editNews";
 import dashBoard from "./pages/admin/dashboard";
 import addNews from "./pages/admin/news/addNews";
 import indexNews from "./pages/admin/news/indexNews";
-import DetailNewsPage from "./pages/detailNews";
-import HomePage from "./pages/home";
-import SignIn from "./pages/signin";
-import SignUp from "./pages/signup";
+import HomePage from "./pages/frontend/home";
+import Signup from "./pages/frontend/signup";
+import Signin from "./pages/frontend/signin";
+import indexCategory from "./pages/admin/category/indexCate";
+import addCategory from "./pages/admin/category/add";
+import editCategory from "./pages/admin/category/edit";
+import allProduct from "./pages/frontend/products/product";
+import detailProducts from "./pages/frontend/products/detailProduct";
+import cartPage from "./pages/frontend/cart";
+import productCate from "./pages/frontend/products/productCate";
+import indexUsers from "./pages/admin/users/listUser";
+import addUsers from "./pages/admin/users/add";
+import editUsers from "./pages/admin/users/edit";
 
-const router = new Navigo("/", { linksSelector: "a" });
-const print = (content) => {
-    document.getElementById("app").innerHTML = content;
+const router = new Navigo("/", { linksSelector: "a", hash: true });
+const print = async(content, id) => {
+    document.getElementById("app").innerHTML = await content.render(id);
+    if (content.afterRender) content.afterRender(id);
 };
+router.on("/admin/*", () => {}, {
+    before(done) {
+        if (localStorage.getItem("user")) {
+            const userId = JSON.parse(localStorage.getItem("user")).id;
+            if (userId === 1) {
+                done();
+            } else {
+                document.location.href = "/";
+            }
+        } else {
+            document.location.href = "/";
+        }
+    },
+});
 
 router.on({
     "/": () => {
-        print(HomePage.render());
+        print(HomePage);
     },
-    "/tuyensinh": () => {
-        print("Tuyển sinh");
+    "/product": () => {
+        print(allProduct);
     },
-    "/chuongtrinhdaotao": () => {
-        print("Chương trình đào tạo");
+    "/categorys/:id?_embed=products": ({ data }) => {
+        print(productCate, data.id);
     },
-    "/gocsinhvien": () => {
-        print("Góc sinh viên");
-    },
-    "/tuyendung": () => {
-        print("Tuyển dụng");
-    },
-    "/news/:id": (value) => {
-        console.log(value.data.id);
-        print(DetailNewsPage.render(value.data.id));
+    "/news/:id": ({ data }) => {
+        print(detailProducts, data.id);
     },
     "/signin": () => {
-        print(SignIn.render());
+        print(Signin);
     },
     "/signup": () => {
-        print(SignUp.render());
+        print(Signup);
     },
     "/admin/dashboard": () => {
-        print(dashBoard.render());
+        print(dashBoard);
     },
     "/admin/news": () => {
-        print(indexNews.render());
+        print(indexNews);
     },
     "/admin/news/add": () => {
-        print(addNews.render());
+        print(addNews);
     },
-    "/admin/news/:id/edit": (value) => {
-        print(editNews.render(value.data.id));
+    "/admin/news/:id/edit": ({ data }) => {
+        print(editNews, data.id);
+    },
+    "/admin/cate": () => {
+        print(indexCategory);
+    },
+    "/admin/cate/add": () => {
+        print(addCategory);
+    },
+    "/admin/cate/:id/edit": ({ data }) => {
+        print(editCategory, data.id);
+    },
+    "/admin/users": () => {
+        print(indexUsers);
+    },
+    "/admin/users/add": () => {
+        print(addUsers);
+    },
+    "/admin/users/:id/edit": ({ data }) => {
+        print(editUsers, data.id);
+    },
+    "/cart": () => {
+        print(cartPage);
     },
 });
 

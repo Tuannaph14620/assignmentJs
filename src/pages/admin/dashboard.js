@@ -1,4 +1,5 @@
-import headerAdmin from "../../components/headerAdmin"
+/* eslint-disable eol-last */
+import headerAdmin from "../../components/headerAdmin";
 
 const dashBoard = {
     render() {
@@ -10,7 +11,7 @@ const dashBoard = {
             </h2>
 
         </div>
-        `
-    }
-}
-export default dashBoard
+        `;
+    },
+};
+export default dashBoard;
