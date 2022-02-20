@@ -21,11 +21,6 @@ export const removeCate = (id) => {
     const url = `/categorys/${id}`;
     return instance.delete(url);
 };
-
-export const getProductCate1 = () => {
-    const url = `/products/1?_expand=categorys`;
-    return instance.get(url);
-}
 export const getProductCate = (id) => {
     const url = `/categorys/${id}?_embed=products`;
     return instance.get(url);

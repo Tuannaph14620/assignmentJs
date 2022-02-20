@@ -3,14 +3,14 @@
             "id": 10,
             "title": "Manchester City Home Shirt 21/22",
             "img": "http://res.cloudinary.com/dl8w6p4sf/image/upload/v1644898155/nxlahni61kxwerfasg3r.png",
-            "price": "2,000,000",
+            "price": 2000000,
             "desc": "",
             "categoryId": 2
         },
         {
             "title": "Manchester City Home Long Sleeve Shirt 21/22 $ ",
             "img": "http://res.cloudinary.com/dl8w6p4sf/image/upload/v1644824570/glfeliwumkvdezlkuar7.png",
-            "price": "2,000,500",
+            "price": 2000500,
             "desc": "Be part of another legendary season. The Manchester City Home Longsleeve Shirt is ideal to add to any ManCity collection. Featuring the shirt of the 2021-22 kit, this long sleeve shirt is sure to show-off your ManCity pride wherever you go.\n",
             "id": 11,
             "categoryId": 1
@@ -18,7 +18,7 @@
         {
             "title": "Manchester City Authentic Football Shorts 21/22",
             "img": "http://res.cloudinary.com/dl8w6p4sf/image/upload/v1644824655/jpq16hvz12sf0mjjqk3k.png",
-            "price": "1,050,000",
+            "price": 1050000,
             "desc": "Wear your city with pride as another legendary season takes play. Featuring the Manchester City 2021/2022 season kit design. Theses shorts are perfect to wear on and off the field. Perfect to show your pride as a true Cityzen.",
             "id": 12,
             "categoryId": 2
@@ -26,7 +26,7 @@
         {
             "title": "Manchester City Pre-Match Jacket",
             "img": "http://res.cloudinary.com/dl8w6p4sf/image/upload/v1644824741/maoydvw08swntzxysmcq.png",
-            "price": "2,500,000",
+            "price": 2500000,
             "desc": "The official Pre-match Collection consists of technical and stylish products worn by your favorite players while warming up before kick-off on match days.",
             "id": 13,
             "categoryId": 3
@@ -34,10 +34,34 @@
         {
             "title": "Manchester City Pre-Match 1/4 Zip Top",
             "img": "http://res.cloudinary.com/dl8w6p4sf/image/upload/v1644825613/hxgo47kmuvjajfpzbmji.png",
-            "price": "2,000,500",
+            "price": 2000500,
             "desc": "The official Pre-match Collection consists of technical and stylish products worn by your favourite players while warming up before kick-off on match days.\n",
             "id": 14,
             "categoryId": 3
+        },
+        {
+            "categoryId": 2,
+            "title": "Manchester City Home Long Sleeve Shirt 21/22",
+            "img": "http://res.cloudinary.com/dl8w6p4sf/image/upload/v1645244113/rq3jsq3hnu1lyi8di59p.png",
+            "price": 2000500,
+            "desc": "Official Club crest on left chest\nPUMA Cat logo on right chest and both sleeves\nV-Neck with rib construction in back and shell fabric in front\nSet-in sleeve construction\nContrasted bonded cuff on both sleeves\nPigment print on upper shoulders\nStraight hem with twin needle finish\ndryCELL - Highly functional materials draw sweat away from your skin and help keep you dry and comfortable during exercise\nRegular Fit\n100% Recycled Polyester\nFrom 93:20 to infinity. Celebrate the 10th anniversary of the iconic 2011/12 title campaign with the new Manchester City Home shirt.",
+            "id": 15
+        },
+        {
+            "categoryId": 2,
+            "title": "Manchester City Football Socks 21/22",
+            "img": "http://res.cloudinary.com/dl8w6p4sf/image/upload/v1645244315/jsuzdbdgkdzxhbdzekfj.png",
+            "price": 250000,
+            "desc": "",
+            "id": 16
+        },
+        {
+            "categoryId": 2,
+            "title": "Manchester City Goalkeeper Shirt 21/22",
+            "img": "http://res.cloudinary.com/dl8w6p4sf/image/upload/v1645244448/a9xncjwgz0k7gkbjayxe.png",
+            "price": 2000500,
+            "desc": "Official Club crest on left chest\nPUMA Cat logo on right chest and both sleeves\nSublimated front graphic, inspired by the new gaming and eSports generation\nCrew neck with glued finishing and stretch tape for extra comfort\nRaglan sleeve construction with mesh shoulder panel\nJacquard body map on back for extra breathability\nContrasted bonded cuff on both sleeves\nPigment print on upper shoulders\nStraight hem with single needle finish\ndryCELL - Highly functional materials draw sweat away from your\nMade with impact-reducing Dope Dye, the new Manchester City Away shirt features all-over water graphics and iridescent accents, marking the launch of new clean water programs by the club’s charity initiative Cityzens Giving.",
+            "id": 17
         }
     ],
     "categorys": [{
@@ -46,7 +70,7 @@
         },
         {
             "id": 2,
-            "name": "Trang phục sân Nhà"
+            "name": "Trang phục sân nhà"
         },
         {
             "id": 3,
@@ -88,6 +112,22 @@
             "img": "https://www.mancity.com/meta/media/tc0nrzlo/tf707890-1.jpg?width=976",
             "comtent": "City welcome Antonio Conte's men to the Etihad Stadium on Saturday 19 February, with kick-off scheduled for 17:30 (UK).City welcome Antonio Conte's men to the Etihad Stadium on Saturday 19 February, with kick-off scheduled for 17:30 (UK).However, the boss is expecting Spurs to push us to our limits this weekend, as they look to end their three-match Premier League losing run.It all points towards a thrilling clash, and the players put the finishing touches to preparations at a windy CFA on Friday afternoon.",
             "desc": "The best of the action from Friday's session at the City Football Academy ahead of Tottenham's Premier League visit."
+        }
+    ],
+
+    "orders": [{
+            "id": 1,
+            "productId": 13,
+            "quantity": 2,
+            "totalPrice": 10000000,
+            "status": 0
+        },
+        {
+            "id": 2,
+            "productId": 11,
+            "quantity": 5,
+            "totalPrice": 10000000,
+            "status": 1
         }
     ]
 }

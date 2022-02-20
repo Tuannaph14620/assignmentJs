@@ -31,9 +31,9 @@ const productCate = {
                         </section>
                         <section>
                             <div class="flex flex-wrap justify-between  gap-px ">
-                                ${data.map((product)=>/* html */`
+                                ${data.product.map((product)=>/* html */`
                                 <div class="w-1/6">
-                                <a href="/news/${product.id}"><img class = "w-full" src="${product.img}" alt=""></a>
+                                <a href="/news/${product.id}"><img class = "w-full" src="${data.img}" alt=""></a>
                                 <p style="font-weight: 600;">${product.title}</p>
                                 <p style="font-size: 15px;">${product.price}đ</p>
                                 </div>`).join("")}

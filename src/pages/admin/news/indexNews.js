@@ -42,10 +42,10 @@ const indexNews = {
                                     STT
                                 </th>
                                 <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                    Tên loại
+                                    Category Name
                                 </th>
                                 <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                    Title
+                                    Name
                                 </th>
                                 <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                     Price
@@ -67,16 +67,16 @@ const indexNews = {
                                     ${post.id}
                                 </td>
                                 <td class="px-6 py-4 whitespace-nowrap">
-                                ${post.categoryId === 1 ? "Trang phục sân nhà" : post.categoryId == 2 ? "Trang phục sân khách" : "Trang phục sân tập"}
+                                ${post.categoryId === 2 ? "Trang phục sân nhà" : post.categoryId == 1 ? "Trang phục sân khách" : "Trang phục sân tập"}
                                 </td>
                                 <td class="px-6 py-4 whitespace-nowrap">
                                     ${post.title}
                                 </td>
                                 <td class="px-6 py-4 whitespace-nowrap">
-                                    ${post.price} vnd
+                                ${Number(post.price).toLocaleString('it-IT', { style: 'currency', currency: 'VND' })}
                                 </td>
                                 <td class="px-6 py-4 ">
-                                    ${post.desc}
+                                <img src="${post.img}" alt="" width="100px">
                                 </td>
 
                                 <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">

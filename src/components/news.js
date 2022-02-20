@@ -1,14 +1,15 @@
 /* eslint-disable indent */
 /* eslint-disable eol-last */
 
-import { getProductCate1 } from "../api/category";
+import { getProductCate2 } from "../api/products";
 import { getAllPost } from "../api/post";
 import { getAll } from "../api/products";
 
 
 const News = {
         async render() {
-            const catePro1 = await getProductCate1()
+            const catePro1 = await getProductCate2()
+            console.log(catePro1.data.products);
             const posts = await getAllPost()
             const { data } = await getAll()
             return /* html */ `
@@ -24,7 +25,7 @@ const News = {
                         <a href="/news/${post.id}">
                             <h3 class="py-2 font-bold text-red-500">${post.title}</h3>
                         </a>
-                        <p>${post.price} vnd</p>
+                        <p>${Number(post.price).toLocaleString('it-IT', { style: 'currency', currency: 'VND' })}</p>
                     </div>
                     `,
         )
@@ -35,7 +36,7 @@ const News = {
         <h2 class="py-4 font-bold text-2xl uppercase">Hoạt động sinh viên</h2>
         <div class = "news">
                 <div class="flex flex-wrap justify-between  gap-px ">
-                ${catePro1.data
+                ${catePro1.data.products
         .map(
             (post) => `
                     <div class="col w-1/6 p-4">

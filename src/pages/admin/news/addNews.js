@@ -48,9 +48,9 @@ const addNews = {
         <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
           <!-- Replace with your content -->
           <form action="" id="form-add">
-            <select id= "cate-post" >
+            <select id= "cate-post"  >
             ${data.map((item) => `
-                <option value="${item.id}">${item.name}</option>
+                <option  value="${item.id}">${item.name}</option>
               `).join("")}
 
             </select>

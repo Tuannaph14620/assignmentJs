@@ -2,9 +2,13 @@
 import instance from "./config";
 
 export const getAll = () => {
-    const url = `/products`;
+    const url = `/products/?_limit=5`;
     return instance.get(url);
 };
+export const getAllProduct = () => {
+    const url = `/products`;
+    return instance.get(url);
+}
 export const get = (id) => {
     const url = `/products/${id}`;
     return instance.get(url);
@@ -22,7 +26,19 @@ export const remove = (id) => {
     return instance.delete(url);
 };
 export const getProductCate1 = () => {
-        const url = `/products/1?_expand=categories`;
+    const url = `/categorys/1?_embed=products`;
+    return instance.get(url);
+}
+export const getProductCate2 = () => {
+    const url = `/categorys/2?_embed=products`;
+    return instance.get(url);
+}
+export const getProductCate3 = () => {
+    const url = `/categorys/3?_embed=products`;
+    return instance.get(url);
+}
+export const getProductSearch = () => {
+        const url = `/products/?p_embed=products`;
         return instance.get(url);
     }
     // export const getCateProduct = (id) => {

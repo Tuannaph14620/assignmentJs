@@ -8,7 +8,7 @@ if (localStorage.getItem("cart")) {
 }
 
 export const addToCart = (newProduct, next) => {
-    const exsitProduct = cart.find((item) => item.id === newProduct.id);
+    const exsitProduct = cart.find((item) => item.id == newProduct.id);
     if (!exsitProduct) {
         cart.push(newProduct);
     } else {
@@ -19,16 +19,16 @@ export const addToCart = (newProduct, next) => {
 };
 
 export const increaseQty = (id, next) => {
-    cart.find((item) => item.id === id).quantity++;
-    localStorage.setItem("cart", JSON.stringify(cart));
+    cart.find(item => item.id == id).quantity++;
+    localStorage.setItem('cart', JSON.stringify(cart));
     next();
 };
 export const decreaseQty = (id, next) => {
-    const currentProduct = cart.find((item) => item.id === id);
+    const currentProduct = cart.find((item) => item.id == id);
     currentProduct.quantity--;
 
     if (currentProduct.quantity < 1) {
-        const confirm = window.confirm("Ban co muon xoa khong?");
+        const confirm = window.confirm("Bạn có muốn xóa sản phẩm này không?");
         if (confirm) {
             cart = cart.filter((item) => item.id !== id);
         }
@@ -40,8 +40,8 @@ export const decreaseQty = (id, next) => {
 export const removeItemInCart = (id, next) => {
     const confirm = window.confirm("Ban co muon xoa khong?");
     if (confirm) {
-        cart = cart.filter((item) => item.id !== id);
+        cart = cart.filter(item => item.id !== id)
     }
-    localStorage.setItem("cart", JSON.stringify(cart));
+    localStorage.setItem('cart', JSON.stringify(cart));
     next();
-};
+}
