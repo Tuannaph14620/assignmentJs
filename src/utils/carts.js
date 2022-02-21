@@ -38,9 +38,10 @@ export const decreaseQty = (id, next) => {
     next();
 };
 export const removeItemInCart = (id, next) => {
-    const confirm = window.confirm("Ban co muon xoa khong?");
+    console.log(id);
+    const confirm = window.confirm("Bạn có muốn xóa sản phẩm này không?");
     if (confirm) {
-        cart = cart.filter(item => item.id !== id)
+        cart = cart.filter(item => item.id !== Number(id))
     }
     localStorage.setItem('cart', JSON.stringify(cart));
     next();

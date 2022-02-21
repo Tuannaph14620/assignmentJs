@@ -62,6 +62,60 @@
             "price": 2000500,
             "desc": "Official Club crest on left chest\nPUMA Cat logo on right chest and both sleeves\nSublimated front graphic, inspired by the new gaming and eSports generation\nCrew neck with glued finishing and stretch tape for extra comfort\nRaglan sleeve construction with mesh shoulder panel\nJacquard body map on back for extra breathability\nContrasted bonded cuff on both sleeves\nPigment print on upper shoulders\nStraight hem with single needle finish\ndryCELL - Highly functional materials draw sweat away from your\nMade with impact-reducing Dope Dye, the new Manchester City Away shirt features all-over water graphics and iridescent accents, marking the launch of new clean water programs by the club’s charity initiative Cityzens Giving.",
             "id": 17
+        },
+        {
+            "categoryId": 1,
+            "title": "Manchester City Away Shirt 21/22",
+            "img": "http://res.cloudinary.com/dl8w6p4sf/image/upload/v1645359874/s2ldtfgrg6vvhenpxwt2.png",
+            "price": "2500000",
+            "desc": "Show off your pride with this Man City Away kit shirt from PUMA. A replica of the same shirts worn by the players on match days. Be proud of your roots. This shirt is designed with dryCELL technology, a V-neck cut and raglan sleeves for the ultimate comfort. Finished off with brand details, this shirt is perfect to wear when exercising or supporting your favourite team.",
+            "createdAt": 1645359898088,
+            "id": 18
+        },
+        {
+            "categoryId": 1,
+            "title": "Manchester City Away Long Sleeve Shirt 21/22",
+            "img": "http://res.cloudinary.com/dl8w6p4sf/image/upload/v1645360140/fxv4czf5ouikrqzmg7vv.png",
+            "price": "2500000",
+            "desc": "Show off your pride with this Man City Away kit shirt from PUMA. A replica of the same shirts worn by the players on match days. Be proud of your roots. This shirt is designed with dryCELL technology, a V-neck cut and long raglan sleeves for the ultimate comfort. Finished off with brand details, this shirt is perfect to wear when exercising or supporting your favourite team.",
+            "createdAt": 1645360156752,
+            "id": 19
+        },
+        {
+            "categoryId": 1,
+            "title": "Manchester City Authentic Football Shorts 21/22",
+            "img": "http://res.cloudinary.com/dl8w6p4sf/image/upload/v1645360187/f5e1vraeg8oaceugszte.png",
+            "price": "1050000",
+            "desc": "Wear your city with pride as another legendary season takes play. Featuring the Manchester City 2021/2022 season kit design. Theses shorts are perfect to wear on and off the field. Perfect to show your pride as a true Cityzen.",
+            "createdAt": 1645360207120,
+            "id": 20
+        },
+        {
+            "categoryId": 1,
+            "title": "Manchester City Socks 21/22",
+            "img": "http://res.cloudinary.com/dl8w6p4sf/image/upload/v1645360234/ohapawyldctstoemisfz.png",
+            "price": "250000",
+            "desc": "Get ready for another legendary season. The Manchester City socks are ideal to add to any Man City collection.\n",
+            "createdAt": 1645360249999,
+            "id": 21
+        },
+        {
+            "categoryId": 1,
+            "title": "Manchester City Goalkeeper Shirt 21/22",
+            "img": "http://res.cloudinary.com/dl8w6p4sf/image/upload/v1645360289/ipafmvsnvy1fq16qad8q.png",
+            "price": "2000500",
+            "desc": "Inspired by the colour worn by Joe Hart in 2011/12 season. The new Manchester City Home Goalkeeper Shirt for the 2021-22 season is a must-add to any Cityzen wardrobe.",
+            "createdAt": 1645360301608,
+            "id": 22
+        },
+        {
+            "categoryId": 3,
+            "title": "Manchester City Pre-Match Shirt",
+            "img": "http://res.cloudinary.com/dl8w6p4sf/image/upload/v1645360419/qwgppxwor2lk6vsmkb8j.png",
+            "price": "2500000",
+            "desc": "The official Pre-match Collection consists of technical and stylish products worn by your favorite players while warming up before kick-off on match days.",
+            "createdAt": 1645360433527,
+            "id": 23
         }
     ],
     "categorys": [{
@@ -89,7 +143,14 @@
             "username": "RipSocola",
             "password": "$2a$10$ba.JR4RuGxnpsNqBaZZ0Y.J2qqAXsfryrBjyjZguOjMfvjsoN68.G",
             "email": "tuannaph14620@fpt.edu.vn",
-            "permission": "1"
+            "permission": 1
+        },
+        {
+            "email": "anhtuanz2783@gmail.com",
+            "password": "$2a$10$kIKh0yeExRmMss9c7iwz4Ohz/AdcPJOd0yg3MMhm6sv8nJj4NSiJO",
+            "username": "Tuấnok",
+            "permission": 1,
+            "id": 3
         }
     ],
     "posts": [{
@@ -114,20 +175,67 @@
             "desc": "The best of the action from Friday's session at the City Football Academy ahead of Tottenham's Premier League visit."
         }
     ],
-
     "orders": [{
-            "id": 1,
-            "productId": 13,
-            "quantity": 2,
-            "totalPrice": 10000000,
-            "status": 0
+            "product": [{
+                    "title": "Manchester City Authentic Football Shorts 21/22",
+                    "img": "http://res.cloudinary.com/dl8w6p4sf/image/upload/v1644824655/jpq16hvz12sf0mjjqk3k.png",
+                    "price": 1050000,
+                    "desc": "Wear your city with pride as another legendary season takes play. Featuring the Manchester City 2021/2022 season kit design. Theses shorts are perfect to wear on and off the field. Perfect to show your pride as a true Cityzen.",
+                    "id": 12,
+                    "categoryId": 2,
+                    "quantity": 2
+                },
+                {
+                    "title": "Manchester City Pre-Match 1/4 Zip Top",
+                    "img": "http://res.cloudinary.com/dl8w6p4sf/image/upload/v1644825613/hxgo47kmuvjajfpzbmji.png",
+                    "price": 2000500,
+                    "desc": "The official Pre-match Collection consists of technical and stylish products worn by your favourite players while warming up before kick-off on match days.\n",
+                    "id": 14,
+                    "categoryId": 3,
+                    "quantity": 4
+                }
+            ],
+            "status": 0,
+            "phone": "0398861434",
+            "firstName": "Tuấn",
+            "lastName": "Nguyễn Anh",
+            "email": "anhtuans2783@gmail.com",
+            "address": "Xóm Núi - Dược Hạ - Tiên Dược ",
+            "city": "Hà Nội",
+            "district": "Sóc Sơn",
+            "ptgh": "0",
+            "id": 6
         },
         {
-            "id": 2,
-            "productId": 11,
-            "quantity": 5,
-            "totalPrice": 10000000,
-            "status": 1
+            "product": [{
+                    "title": "Manchester City Authentic Football Shorts 21/22",
+                    "img": "http://res.cloudinary.com/dl8w6p4sf/image/upload/v1644824655/jpq16hvz12sf0mjjqk3k.png",
+                    "price": 1050000,
+                    "desc": "Wear your city with pride as another legendary season takes play. Featuring the Manchester City 2021/2022 season kit design. Theses shorts are perfect to wear on and off the field. Perfect to show your pride as a true Cityzen.",
+                    "id": 12,
+                    "categoryId": 2,
+                    "quantity": 7
+                },
+                {
+                    "title": "Manchester City Pre-Match 1/4 Zip Top",
+                    "img": "http://res.cloudinary.com/dl8w6p4sf/image/upload/v1644825613/hxgo47kmuvjajfpzbmji.png",
+                    "price": 2000500,
+                    "desc": "The official Pre-match Collection consists of technical and stylish products worn by your favourite players while warming up before kick-off on match days.\n",
+                    "id": 14,
+                    "categoryId": 3,
+                    "quantity": 7
+                }
+            ],
+            "status": 0,
+            "phone": "23403275324",
+            "firstName": "dfvdsvsv",
+            "lastName": "sdfgvsdfvdsvsdfv",
+            "email": "dsfvsdfvsdfv",
+            "address": "sdgvsdfvdsv",
+            "city": "sfdvsdfv",
+            "district": "dfsdvsedfv",
+            "ptgh": "1",
+            "id": 7
         }
     ]
 }

@@ -8,6 +8,7 @@ import headerIndex from "../../../components/header";
 import { addToCart } from "../../../utils/carts";
 import { $ } from "../../../utils/selector";
 import "toastr/build/toastr.min.css";
+import footerIndex from "../../../components/footer";
 // import data from "../data";
 
 const detailProducts = {
@@ -61,10 +62,10 @@ const detailProducts = {
             </svg>
           </div>
           <p class="sr-only">4 out of 5 stars</p>
-          <a href="#" class="ml-3 text-sm font-medium text-indigo-600 hover:text-indigo-500">117 reviews</a>
+          <a href="#" class="ml-3 text-sm font-medium text-indigo-600 hover:text-indigo-500">117 reviews</a> 
         </div>
       </div>
-
+     
       <form class="mt-10">
         <!-- quantity -->
         <div class ="mt-10"><input type="number" id="inputQty" class="border border-gray-400 p-3" value="1" /> </div>
@@ -138,11 +139,13 @@ const detailProducts = {
             </div>
         </section>
         </main>
-        
+        <div id="footer">${footerIndex.render()} </div>
         `;
     },
 
     afterRender(id) {
+
+        headerIndex.afterRender()
         $("#btnAddToCart").addEventListener("click", async() => {
             const { data } = await get(id);
             addToCart({...data, quantity: +$("#inputQty").value }, () => {

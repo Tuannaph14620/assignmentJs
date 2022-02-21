@@ -1,5 +1,6 @@
 /* eslint-disable indent */
 /* eslint-disable no-alert */
+import cartPage from "../pages/frontend/cart";
 import { reRender } from "../utils/reRender";
 
 const headerIndex = {
@@ -11,12 +12,7 @@ const headerIndex = {
                 <a href="index.php"><img src="https://res.cloudinary.com/dl8w6p4sf/image/upload/v1644822377/logo_ea3bvi.png" alt=""></a>
                 <p class= "pl-5 font-bold text-xl text-white">ManCity Shop</p>
             </div>
-            <div class="search float-right ">
-                <form action="index.php?act=search" method="post" enctype="multipart/form-data">
-                    <input type="text" placeholder="Tìm kiếm" name="name">
-                    <button type="submit" name="search">Tìm kiếm</i></button>
-                </form>
-            </div>
+            
             <div class="account">
             <div>
             <span id="account" class="text-white"></span>
@@ -29,7 +25,6 @@ const headerIndex = {
             <nav class = "flex bg-blue-400 py-5 justify-between ">
                 <ul class= "flex mx-auto ">
                     <li class = "pr-10 text-lg "><a class = "hover:text-blue-600 p-5 text-white  font-bold" href="/">Trang chủ</a></li>
-                    <li class = "pr-10 text-lg"><!-- This example requires Tailwind CSS v2.0+ -->
                     <li class = "pr-10 text-lg"><a class = "hover:text-blue-600 p-5 text-white  font-bold" href="/product">Sản phẩm</a></li>
                     <li class = "pr-10 text-lg"><a class = "hover:text-blue-600 p-5 text-white  font-bold" href="index.php?act=dstt">Tin tức</a></li>
                     <li class = "pr-10 text-lg"><a class = "hover:text-blue-600 p-5 text-white  font-bold" href="index.php?act=contactx">Liên hệ</a></li>
@@ -47,7 +42,9 @@ const headerIndex = {
 
         btnLogout.addEventListener("click", () => {
             localStorage.removeItem("user");
+            localStorage.removeItem('cart')
             alert("Ban da logout thanh cong");
+            reRender(cartPage, "#app")
             reRender(headerIndex, "#header");
         });
     },

@@ -18,6 +18,8 @@ import productCate from "./pages/frontend/products/productCate";
 import indexUsers from "./pages/admin/users/listUser";
 import addUsers from "./pages/admin/users/add";
 import editUsers from "./pages/admin/users/edit";
+import indexOrders from "./pages/admin/orders/listOrder";
+import indexDetailOrders from "./pages/admin/orders/detailOrder";
 
 const router = new Navigo("/", { linksSelector: "a", hash: true });
 const print = async(content, id) => {
@@ -27,8 +29,8 @@ const print = async(content, id) => {
 router.on("/admin/*", () => {}, {
     before(done) {
         if (localStorage.getItem("user")) {
-            const userId = JSON.parse(localStorage.getItem("user")).id;
-            if (userId === 1) {
+            const userPermission = JSON.parse(localStorage.getItem("user")).permission;
+            if (userPermission === 0) {
                 done();
             } else {
                 document.location.href = "/";
@@ -87,6 +89,12 @@ router.on({
     },
     "/admin/users/:id/edit": ({ data }) => {
         print(editUsers, data.id);
+    },
+    "/admin/orders": () => {
+        print(indexOrders);
+    },
+    "/admin/orders/:id": ({ data }) => {
+        print(indexDetailOrders, data.id);
     },
     "/cart": () => {
         print(cartPage);

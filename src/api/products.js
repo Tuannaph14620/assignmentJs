@@ -2,7 +2,7 @@
 import instance from "./config";
 
 export const getAll = () => {
-    const url = `/products/?_limit=5`;
+    const url = `/products/?_sort=createdAt&_order=asc&_limit=5`;
     return instance.get(url);
 };
 export const getAllProduct = () => {
@@ -37,11 +37,19 @@ export const getProductCate3 = () => {
     const url = `/categorys/3?_embed=products`;
     return instance.get(url);
 }
-export const getProductSearch = () => {
-        const url = `/products/?p_embed=products`;
-        return instance.get(url);
-    }
-    // export const getCateProduct = (id) => {
-    //     const url = `/products/${id}?_embed=category`;
-    //     return instance.get(url);
-    // };
+export const getProductA_Z = () => {
+    const url = `/categorys/?_sort=price&_order=asc`;
+    return instance.get(url);
+}
+export const getProductZ_A = () => {
+    const url = `/categorys/?_sort=price&_order=desc`;
+    return instance.get(url);
+}
+export const getProductNew = () => {
+    const url = `/categorys/?_sort=createdAt&_order=asc`;
+    return instance.get(url);
+}
+export const getProductSearch = (post) => {
+    const url = `/products/?title_like=${post}`;
+    return instance.get(url);
+}
